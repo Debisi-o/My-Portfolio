@@ -12,22 +12,55 @@ header {
     text-align: center;
 }
 
-nav a {
-    color: #fff;
-    margin: 0 10px;
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
     text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
 section {
-    padding: 2rem;
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 footer {
-    background: #f4f4f4;
+    background: #333;
     text-align: center;
     padding: .2rem;
-    height: 35px;
     position: fixed;
     width: 100%;
     bottom: 0;
+    padding: 10px 0;
+    color: #fff;
+}
+
+
+/* Responsive Styling */
+@media screen and (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
 }
