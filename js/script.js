@@ -70,3 +70,5 @@ document.addEventListener('DOMContentLoaded', () => {
         cursorChar: '|',
     });
 });
+
+// Smooth scroll for navigation links
